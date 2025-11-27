@@ -20,22 +20,23 @@
             padding-bottom: 90px; /* nav-row height (80px) + some extra spacing */
         }
 
-        /* Page watermark */
-        body::after {
-            content: "ENGLISH CENTER FOR EVERYONE";
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(-20deg);
-            font-size: 72px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            color: #000000;
-            opacity: 0.05; /* subtle */
-            pointer-events: none;
-            z-index: 0;
-            white-space: nowrap;
-        }
+       /* Page watermark (logo ECE mờ) */
+body::after {
+    content: "";
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-12deg);
+    width: 600px;         /* chỉnh kích thước logo watermark */
+    height: 600px;
+    background-image: url('ECE mới.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.06;        /* độ mờ */
+    pointer-events: none;
+    z-index: 0;
+}
+
 
         .header {
             background-color: #ffffff;
