@@ -42,29 +42,31 @@ body::after {
 
 
         .header {
-            background-color: #0e3178 !important;
-            padding: 12px 20px;
-            border-bottom: 1px solid #e0e0e0;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            height: 60px;
-        }
-
-        .telegram-link {
-    margin-left: auto;   /* đẩy sang phải */
-    color: white;
-    font-weight: bold;
+    background-color: #0e3178 !important;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;  /* logo trái – text phải */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 60px;
 }
 
+/* Logo bên trái */
 .ece-logo {
-    height: 38px;            /* chỉnh độ cao logo */
-    margin-right: auto;      /* đẩy tất cả phần còn lại sang bên phải */
+    height: 38px;       /* chỉnh cao logo */
+    display: block;
+}
+
+/* Nút "TRUNG TÂM NGOẠI NGỮ ECE" bên phải */
+.telegram-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
         .ielts-logo {
@@ -1856,18 +1858,16 @@ width: 75%;
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="timer-container">
-            <span class="timer-display">60:00</span>
-        </div>
-        <img src="ECE-white.png" class="ece-logo" />
-        <a href="https://www.facebook.com/NgoainguECE" target="_blank" class="telegram-link">
-            TRUNG TÂM NGOẠI NGỮ ECE
-        </a>
-        <div class="header-icons">
-        <img src="ECE-white.png" class="ece-logo" />
-        </div>
-    </div>
+<div class="header">
+
+    <img src="ECE-white.png" class="ece-logo">
+
+    <a href="https://www.facebook.com/NgoainguECE" target="_blank" class="telegram-link">
+        TRUNG TÂM NGOẠI NGỮ ECE
+    </a>
+
+</div>
+
 
     <div class="audio-player-container">
         <button id="play-pause-btn" class="player-btn">
