@@ -27,14 +27,16 @@ body::after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-12deg);
-    width: 600px;         /* chỉnh kích thước logo watermark */
-    height: 600px;
+
+    width: 400px;              /* tạm cho nhỏ lại để dễ thấy */
+    height: 400px;
     background-image: url('ECE-watermark.png');
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.06;        /* độ mờ */
+
+    opacity: 0.25;             /* TẠM tăng đậm lên để test */
     pointer-events: none;
-    z-index: 0;
+    z-index: 999;              /* cho nổi lên trên hẳn */
 }
 
 
